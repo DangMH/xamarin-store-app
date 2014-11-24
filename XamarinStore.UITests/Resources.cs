@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,8 +16,11 @@ namespace XamarinStore.UITests
     /// </summary>
     public class Resources
     {
-        public const string ANDROID_APP_APK_FILEPATH = @"D:\Users\Michael\Source\Repos\xamarin-store-app\XamarinStore.Droid\com.xamarin.XamStore.apk";
+        public const string SOURCE_DIR = @"D:\Users\Michael\Source\Repos\xamarin-store-app\";
+        public const string SCREENSHOT_DIR = SOURCE_DIR + @"XamarinStore.UITests\Screenshots\";
+        public const string ANDROID_APP_APK_FILEPATH = SOURCE_DIR + @"XamarinStore.Droid\com.xamarin.XamStore.apk";    
         public const string NEXUS_4_DEVICE_SERIAL = "10.71.34.101:5555";
+        public const string SCREENSHOT_EXT = ".png";
         public const int DEFAULT_QUERY_WAIT_TIME = 100;
 
         public static readonly Func<AppQuery, AppQuery> BASKET_CART = c => c.Marked("cart_menu_item");
@@ -39,17 +43,30 @@ namespace XamarinStore.UITests
         {
             if (null != deviceSerial)
             {
-                return ConfigureApp.Android.ApkFile(androidAPKFilepath).DeviceSerial(deviceSerial).StartApp();
+                return ConfigureApp.Android.ApkFile(androidAPKFilepath).DeviceSerial(deviceSerial).EnableLocalScreenshots().StartApp();
             }
             else
             {
-                return ConfigureApp.Android.ApkFile(androidAPKFilepath).StartApp();
+                return ConfigureApp.Android.ApkFile(androidAPKFilepath).EnableLocalScreenshots().StartApp();
             }
         }
 
         public static AndroidApp ConfigureAndroidApp(string androidAPKFilepath)
         {
             return ConfigureAndroidApp(androidAPKFilepath, null);
+        }
+
+        public static void Screenshot(AndroidApp app, string filename)
+        {
+            FileInfo fi = app.Screenshot(filename);
+
+            int i = 0;
+            while (File.Exists(SCREENSHOT_DIR + filename + i + SCREENSHOT_EXT))
+            {
+                ++i;
+            }
+
+            fi.CopyTo(SCREENSHOT_DIR + filename + i + SCREENSHOT_EXT);
         }
 
         public static void WaitForElement(AndroidApp app, Func<AppQuery, AppQuery> query)

@@ -16,11 +16,19 @@ namespace XamarinStore.UITests
     public class ValidateCartTests
     {
         protected AndroidApp _app;
+        protected TestContext context;
 
         [SetUp]
         public void SetUp()
         {
             _app = Resources.ConfigureAndroidApp(Resources.ANDROID_APP_APK_FILEPATH);
+            context = TestContext.CurrentContext;
+        }
+
+        [TearDown]
+        public void ScreenCapture()
+        {
+            Resources.Screenshot(_app, context.Test.Name + "-" + context.Result.State.ToString());
         }
 
         [Test]
