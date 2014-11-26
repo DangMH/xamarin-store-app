@@ -76,3 +76,13 @@ This test has uncovered another bug at time of development.  When the text field
 3. **ValidateSinglePurchaseValidShipping**
 This code has the valid shipping info population logic and finalize order logic commented out as the app only allows one shirt order to account.  Until the logic to allow infinite orders is allowed, this code will only run once before failing due to the servers denying further orders.
 
+###Example Result Screenshots
+
+**ValidateAppLoadsWithEmptyCart-Success0.png**  
+![ValidateAppLoadsWithEmptyCart-Success0.png](Screenshots/ValidateAppLoadsWithEmptyCart-Success0.png)  
+
+**ValidateInCartAddAllProducts-Success0.png**  
+![ValidateInCartAddAllProducts-Success0.png](Screenshots/ValidateInCartAddAllProducts-Success0.png)
+
+**ValidateSinglePurchaseInvalidShipping-Error0.png**  
+![ValidateSinglePurchaseInvalidShipping-Error0.png](Screenshots/ValidateSinglePurchaseInvalidShipping-Error0.png)
