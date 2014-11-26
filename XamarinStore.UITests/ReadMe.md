@@ -2,8 +2,10 @@
 ================
 Summary  
 ----------------
-●	Write a Calabash script that navigates through the app and tests that each page is working as it should  
+●	Write a Calabash script that navigates through the app and tests that each page is working as it should 
+ 
 ●	Script would automate both success cases, like form being filled out correctly, and failure cases such as incorrect input correctly identified as such  
+
 ●	Bonus: Write the tests in UITest, which is a Calabash-compatible test framework meant for NUnit and C# testing.  
 
 Setup  
