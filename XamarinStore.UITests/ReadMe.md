@@ -40,8 +40,13 @@ Written in Visual Studio 2013
 
 ###Installation
 
-- Download the repository locally
-- Open the .sln file in Visual Studio 2013
+- Download the repository locally  
+
+- Open the .sln file in Visual Studio 2013  
+
+- Insert email into the Xamarin app LoginFragment.cs file for Android or LoginViewController.cs for iOS  
+
+- Populate the Resources TEST\_ACCOUNT\_EMAIL and TEST\_ACCOUNT\_PASSWORD with the appropriate Xamarin account information  
 
 ###Design
 Essentially I wanted to create a _robust_ test framework that increased _readability_ and _reduced redundant code_.  There were many instances of UI functionality I wished I had (Scrolling down until an element showed for multipage views, navigating to another view and confirming the view is displayed, etc.) and macros that condensed redundant code (try waiting for an element before catching the exception and asserting failure, queries for specific elements).  The **Resources** class held those macros (which can be used for any set of UI tests) as well as assets (source and app filepaths) and queries specific to the Xamarin Store.
