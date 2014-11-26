@@ -28,6 +28,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\XamarinStore.UITests.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework">
@@ -50,7 +51,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="XamarinStoreUITestsAndroid.cd" />
+    <None Include="ReadMe.md" />
+    <None Include="XamarinStoreUITests.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -63,9 +65,6 @@
     <Content Include="Screenshots\ValidateAppLoadsWithEmptyCart-Success0.png" />
     <Content Include="Screenshots\ValidateAppLoadsWithEmptyCart-Success1.png" />
     <Content Include="Screenshots\ValidateAppLoadsWithEmptyCart-Success2.png" />
-    <Content Include="Screenshots\ValidateDoublePurchaseAllProducts-Error0.png" />
-    <Content Include="Screenshots\ValidateDoublePurchaseAllProducts-Error1.png" />
-    <Content Include="Screenshots\ValidateDoublePurchaseAllProducts-Error2.png" />
     <Content Include="Screenshots\ValidateInCartAddAllProducts-Success0.png" />
     <Content Include="Screenshots\ValidateInCartAddAllProducts-Success1.png" />
     <Content Include="Screenshots\ValidateInCartAddAllProducts-Success2.png" />
@@ -84,6 +83,7 @@
     <Content Include="Screenshots\ValidateSinglePurchaseValidShipping-Error0.png" />
     <Content Include="Screenshots\ValidateSinglePurchaseValidShipping-Error1.png" />
     <Content Include="Screenshots\ValidateSinglePurchaseValidShipping-Error2.png" />
+    <Content Include="Screenshots\XamarinStoreUITestsClassDiagram.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

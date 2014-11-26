@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="XamarinStore.UITests.XamarinStoreUITests">
+    <Position X="4.25" Y="0.5" Width="3.25" />
+    <Members>
+      <Field Name="_app" Hidden="true" />
+      <Field Name="context" Hidden="true" />
+      <Field Name="debug" Hidden="true" />
+      <Field Name="device" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="XamarinStore.UITests.XamarinStoreUITests.DeviceSupported" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>XamarinStoreUITests.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BBACAACCAAAIAAgAABGAAAAAAFAAIAGAAAAIAAAIAIE=</HashCode>
+      <FileName>XamarinStoreUITests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XamarinStore.UITests.Resources">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <Members>
+      <Field Name="ALL_VIEW_BASKET_CART" Hidden="true" />
+      <Field Name="ANDROID_APP_APK_FILEPATH" Hidden="true" />
+      <Field Name="CART_VIEW_BASKET_EMPTY" Hidden="true" />
+      <Field Name="CHECKOUT_VIEW1_EMAIL" Hidden="true" />
+      <Field Name="CHECKOUT_VIEW1_PASSWORD" Hidden="true" />
+      <Field Name="CHECKOUT_VIEW1_SIGN_IN" Hidden="true" />
+      <Field Name="CHECKOUT_VIEW2_PLACE_ORDER" Hidden="true" />
+      <Field Name="CHECKOUT_VIEW2_SHIPPING_INFORMATION1" Hidden="true" />
+      <Field Name="CHECKOUT_VIEW2_SHIPPING_INFORMATION2" Hidden="true" />
+      <Field Name="CHECKOUT_VIEW3_ORDER_COMPLETE" Hidden="true" />
+      <Field Name="HOME_VIEW" Hidden="true" />
+      <Field Name="HOME_VIEW__PRODUCTS" Hidden="true" />
+      <Field Name="IOS_APP_FILEPATH" Hidden="true" />
+      <Field Name="MAX_DRAG_ATTEMPTS" Hidden="true" />
+      <Field Name="NEXUS_4_DEVICE_SERIAL" Hidden="true" />
+      <Field Name="PRODUCT_VIEW_ADD_TO_BASKET" Hidden="true" />
+      <Field Name="PRODUCT_VIEW_CHECKOUT" Hidden="true" />
+      <Field Name="PRODUCT_VIEW_DROPDOWN" Hidden="true" />
+      <Field Name="PRODUCT_VIEW_DROPDOWN_ITEMS" Hidden="true" />
+      <Field Name="PRODUCT_VIEW_DROPDOWNS" Hidden="true" />
+      <Field Name="PRODUCT_VIEW_PRODUCT_SIZE_COLOR" Hidden="true" />
+      <Field Name="PRODUCT_VIEW_PRODUCT_TITLE_PRICE" Hidden="true" />
+      <Field Name="PRODUCT_VIEW_PRODUCTS" Hidden="true" />
+      <Field Name="SCREENSHOT_DIR" Hidden="true" />
+      <Field Name="SCREENSHOT_EXT" Hidden="true" />
+      <Field Name="SOURCE_DIR" Hidden="true" />
+      <Field Name="TEST_ACCOUNT_EMAIL" Hidden="true" />
+      <Field Name="TEST_ACCOUNT_PASSWORD" Hidden="true" />
+      <Field Name="TEST_INVALID_SHIPPING_INFO1" Hidden="true" />
+      <Field Name="TEST_INVALID_SHIPPING_INFO2" Hidden="true" />
+      <Field Name="TEST_SHIPPING_INFO1" Hidden="true" />
+      <Field Name="TEST_SHIPPING_INFO2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>SgACJAAIAICAUMAKAAEAQgAAEFIgAAKwCCAgAQCQBBE=</HashCode>
+      <FileName>Resources.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
