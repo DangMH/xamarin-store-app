@@ -69,7 +69,7 @@ At the time of this submission there are 3 failures:
 This test was created from a bug found when manually play-testing the Xamarin Store app.  At the time of failure, the app was having issues when 2 of the same item to the cart (i.e., 2 men's shirts and/or 2 women's shirts), regardless of size or color.  When the cart contains the previous case, any item that is removed will remove the item following it in the cart as well.  If it is the item at the end of the cart, the app freezes, switches views back to the phone home and sends XamarinStore into the background.  
 
 2. **ValidateSinglePurchaseInvalidShipping**  
-This test has uncovered another bug at time of development.  When the text fields are set correctly and missing the zipcode, the presented error code when the order is finalized is _"Country is required"_ instead of the expected _"Zipcode is required"_.
+This test has uncovered another bug at time of development.  When the text fields are set correctly and missing the zipcode, the presented error code when the order is finalized is _"Country is required"_ instead of the expected _"Zipcode is required"_.  
 ![ExpectedPostalCode-ActualErrorCountryError.png](Screenshots/ExpectedPostalCode-ActualErrorCountryError.png)  
 3. **ValidateSinglePurchaseValidShipping**
 This code has the valid shipping info population logic and finalize order logic commented out as the app only allows one shirt order to account.  Until the logic to allow infinite orders is allowed, this code will only run once before failing due to the servers denying further orders.
