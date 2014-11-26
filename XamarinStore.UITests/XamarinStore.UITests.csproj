@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources.cs" />
-    <Compile Include="ValidateCartTests.cs" />
+    <Compile Include="XamarinStoreUITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,10 +58,32 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Screenshots\ValidateAddItemToCart-Success0.png" />
+    <Content Include="Screenshots\ExpectedPostalCode-ActualErrorCountryError.png" />
+    <Content Include="Screenshots\SampleRunTimes.png" />
     <Content Include="Screenshots\ValidateAppLoadsWithEmptyCart-Success0.png" />
     <Content Include="Screenshots\ValidateAppLoadsWithEmptyCart-Success1.png" />
     <Content Include="Screenshots\ValidateAppLoadsWithEmptyCart-Success2.png" />
+    <Content Include="Screenshots\ValidateDoublePurchaseAllProducts-Error0.png" />
+    <Content Include="Screenshots\ValidateDoublePurchaseAllProducts-Error1.png" />
+    <Content Include="Screenshots\ValidateDoublePurchaseAllProducts-Error2.png" />
+    <Content Include="Screenshots\ValidateInCartAddAllProducts-Success0.png" />
+    <Content Include="Screenshots\ValidateInCartAddAllProducts-Success1.png" />
+    <Content Include="Screenshots\ValidateInCartAddAllProducts-Success2.png" />
+    <Content Include="Screenshots\ValidateInCartChangeAllColorsAllProducts-Success0.png" />
+    <Content Include="Screenshots\ValidateInCartChangeAllColorsAllProducts-Success1.png" />
+    <Content Include="Screenshots\ValidateInCartChangeAllColorsAllProducts-Success2.png" />
+    <Content Include="Screenshots\ValidateInCartChangeAllSizesAllProducts-Success0.png" />
+    <Content Include="Screenshots\ValidateInCartChangeAllSizesAllProducts-Success1.png" />
+    <Content Include="Screenshots\ValidateInCartChangeAllSizesAllProducts-Success2.png" />
+    <Content Include="Screenshots\ValidateSinglePurchaseAllProducts-Success0.png" />
+    <Content Include="Screenshots\ValidateSinglePurchaseAllProducts-Success1.png" />
+    <Content Include="Screenshots\ValidateSinglePurchaseAllProducts-Success2.png" />
+    <Content Include="Screenshots\ValidateSinglePurchaseInvalidShipping-Error0.png" />
+    <Content Include="Screenshots\ValidateSinglePurchaseInvalidShipping-Error1.png" />
+    <Content Include="Screenshots\ValidateSinglePurchaseInvalidShipping-Error2.png" />
+    <Content Include="Screenshots\ValidateSinglePurchaseValidShipping-Error0.png" />
+    <Content Include="Screenshots\ValidateSinglePurchaseValidShipping-Error1.png" />
+    <Content Include="Screenshots\ValidateSinglePurchaseValidShipping-Error2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
