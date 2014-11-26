@@ -51,7 +51,8 @@ The **XamarinStoreUITests** class can then leverage the **Resources** class at w
 ![XamarinStoreUITestsClassDiagram.png](Screenshots/XamarinStoreUITestsClassDiagram.png)  
 
 ###Results
-Here is a set of example run times and result of the latest test pass:
+Here is a set of example run times and result of the latest test pass:  
+
 ![SampleRunTimes.png](Screenshots/SampleRunTimes.png)  
 
 At the time of this submission there are 3 failures:  
