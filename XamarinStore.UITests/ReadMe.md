@@ -70,9 +70,7 @@ This test was created from a bug found when manually play-testing the Xamarin St
 
 2. **ValidateSinglePurchaseInvalidShipping**  
 This test has uncovered another bug at time of development.  When the text fields are set correctly and missing the zipcode, the presented error code when the order is finalized is _"Country is required"_ instead of the expected _"Zipcode is required"_.
-
 ![ExpectedPostalCode-ActualErrorCountryError.png](Screenshots/ExpectedPostalCode-ActualErrorCountryError.png)  
-
 3. **ValidateSinglePurchaseValidShipping**
 This code has the valid shipping info population logic and finalize order logic commented out as the app only allows one shirt order to account.  Until the logic to allow infinite orders is allowed, this code will only run once before failing due to the servers denying further orders.
 
