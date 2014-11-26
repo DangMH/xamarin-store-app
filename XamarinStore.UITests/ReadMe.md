@@ -53,6 +53,8 @@ Essentially I wanted to create a _robust_ test framework that increased _readabi
 
 The **XamarinStoreUITests** class can then leverage the **Resources** class at will throughout its tests.  The public interface reveals the _scenarios_ and _use cases_ for the app.  The private interface is the framework that the set of tests can leverage for element validation as well as other functional testing.  Using _Xamarin's_ **IApp** interface, the tests are platform agnostic and will run against both _iOS_ apps and _Android_ apps (and possibly _Windows Phone_ apps in the future).
 
+All UI tests will also screen capture at test completion (success or failure) and will have tagged and ordered files created per test.
+
 ![XamarinStoreUITestsClassDiagram.png](Screenshots/XamarinStoreUITestsClassDiagram.png)  
 
 ###Results
